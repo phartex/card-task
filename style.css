@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    background-image: url(img/bg-pattern-bottom.svg), url(img/bg-pattern-top.svg);
+    background-position: left 50vw top 50vh, right 50vw bottom 50vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.container {
+    background: #fff;
+    height: 53%;
+    margin: 150px 40px 10px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container  {
+    position: relative;
+}
+.container .blue-bg img{
+   width: 100%;
+   border-radius: 30px 30px 0 0;
+}
+
+.container .profile-img img{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 100%;
+    border: 5px solid #fff;
+}
+
+.container .profile-writeup{
+    text-align: center;
+    margin-top: 35%;
+    margin-bottom: 15px;
+}
+
+.container .profile-writeup h1{
+    font-size: 1rem;
+}
+
+.container .profile-writeup p{
+    font-size: 0.8rem;
+}
+
+.container .profile-figures{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container .profile-figures h1 {
+    font-size: 1rem;
+}
+.container .profile-figures p{
+    font-size: 0.8rem;
+}
+
+.container .footer{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+@media only screen and (min-width:1000px){
+    .container {
+        background: #fff;
+        /* height: 100%; */
+        /* width: 100%; */
+        margin: 10rem auto;
+        border-radius: 30px;
+        max-width: 350px;
+        /* position: relative; */
+    }
+    .container .profile-img img{
+        /* margin-top: 10px; */
+        margin: 10px 20px;
+    }
+    .container .blue-bg img{
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+     }
+     .container  {
+        position: sticky;
+    }
+    .container .profile-writeup{
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 15px;
+    }
+    
+}
